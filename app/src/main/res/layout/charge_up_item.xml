@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_charge_up_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="@dimen/dp_20"
+    tools:context="com.wwx.chargeup.ui.adapter.StatusAdapter">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_accounts_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        tools:text="@string/dialog_accounts_type_title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_accounts_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_accounts_type"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="bottom"
+        android:textColor="@color/black40"
+        android:textSize="@dimen/sp_11"
+        tools:text="时间:" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_accounts_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        tools:text="+100" />
+
+    <View
+        android:id="@+id/view_bottom_line"
+        style="@style/HorizontalLineStyle"
+        android:layout_below="@id/tv_accounts_time"
+        android:layout_marginVertical="@dimen/dp_10" />
+
+</RelativeLayout>

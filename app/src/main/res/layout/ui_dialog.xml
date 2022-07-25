@@ -2,13 +2,14 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cdv_dialog_root"
     android:layout_width="@dimen/dp_240"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="@dimen/dialog_ui_round_size"
     app:cardElevation="0px"
-    tools:context=".ui.dialog.CommonDialog">
+    tools:context="com.wwx.chargeup.ui.dialog.CommonDialog">
 
     <LinearLayout
         android:id="@+id/ll_ui_container"

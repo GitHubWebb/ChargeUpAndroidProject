@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_10"
+    android:paddingVertical="@dimen/dp_8"
+    tools:background="@color/white"
+    tools:context="com.wwx.chargeup.ui.dialog.ChargeUpDialog">
+
+    <!-- 账目类型 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_accounts_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="@string/dialog_accounts_type_title" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/cet_accounts_type"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_toRightOf="@+id/tv_accounts_type"
+            android:hint="（中文、英文、数字）"
+            android:maxHeight="@dimen/dp_100" />
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_accounts_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="状态:" />
+
+        <RadioGroup
+            android:id="@+id/rdg_accounts_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_accounts_state"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rdg_accounts_state_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/radiobutton_selector"
+                android:checked="true"
+                android:paddingStart="@dimen/dp_5"
+                android:text="支出" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rdg_accounts_state_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_5"
+                android:background="@null"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingStart="@dimen/dp_5"
+                android:text="收入" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rdg_accounts_state_un"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:button="@drawable/radiobutton_selector"
+                android:paddingStart="@dimen/dp_5"
+                android:text="禁用" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_accounts_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:text="@string/dialog_accounts_money_title" />
+
+        <com.hjq.widget.view.ClearEditText
+            android:id="@+id/cet_accounts_money"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_toRightOf="@+id/tv_accounts_money"
+            android:hint="（允许输入带有小数点的数字）"
+            android:inputType="numberDecimal" />
+    </RelativeLayout>
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginHorizontal="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_accounts_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:text="日期:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cet_accounts_date"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_toRightOf="@id/tv_accounts_date"
+                android:hint="@string/date_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_accounts_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_10"
+                android:text="时间:" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cet_accounts_time"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:layout_toRightOf="@id/tv_accounts_time"
+                android:hint="@string/time_title" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">安卓技术中台</string>
+    <string name="app_name">记账 工具</string>
 
     <!-- 通用的 -->
     <string name="common_loading">加载中&#8230;</string>
@@ -149,12 +149,22 @@
     <!-- 身份校验对话框 -->
     <string name="safe_title">身份校验</string>
 
+    <!-- 记账编辑对话框 -->
+    <string name="dialog_accounts_title">编辑账目</string>
+    <string name="dialog_accounts_type_title">类型:</string>
+    <string name="dialog_accounts_money_title">价格:</string>
+    <string name="dialog_accounts_type_error">账目类型错误，请检查输入</string>
+    <string name="dialog_accounts_money_error">账目金额错误，请检查输入</string>
+
     <!-- 首页 -->
     <string name="home_exit_hint">再按一次退出</string>
     <string name="home_nav_index">首页</string>
+    <string name="home_nav_charge_up">记账</string>
     <string name="home_nav_found">发现</string>
     <string name="home_nav_message">消息</string>
     <string name="home_nav_me">我的</string>
+
+    <string name="title_add_charge_up">新增记账数据</string>
 
     <!-- 登录 -->
     <string name="login_register">注册</string>

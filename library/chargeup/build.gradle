@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply from: '../../common.gradle'
+
+
+dependencies {
+    // 通用module依赖
+    // 基类封装
+    implementation project(':library:base')
+    // 控件封装
+    implementation project(':library:widget')
+    // 友盟封装
+    implementation project(':library:umeng')
+
+}

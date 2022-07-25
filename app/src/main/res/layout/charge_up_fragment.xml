@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wwx.chargeup.ui.fragment.ChargeUpFragment">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@null"
+        app:rightIcon="@drawable/add_ic"
+        app:title="@string/home_nav_charge_up" />
+
+    <com.hjq.widget.layout.SettingBar
+        android:id="@+id/sb_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        app:bar_leftText="余额"
+        app:bar_rightDrawable="@drawable/arrows_bottom_ic"
+        app:bar_rightText="" />
+
+    <com.wwx.chargeup.widget.StatusLayout
+        android:id="@+id/hl_charge_up_select_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hjq.shape.layout.ShapeRecyclerView
+            android:id="@+id/sp_rv_charge_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:gravity="center"
+            android:paddingTop="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_10"
+            app:shape="rectangle"
+            app:shape_radius="@dimen/dp_10"
+            app:shape_shadowColor="@color/black10"
+            app:shape_shadowSize="@dimen/dp_10"
+            app:shape_solidColor="@color/white" />
+
+        <!--
+            会导致页面效果错乱 RecyclerView内容超出
+            等轮子哥修复
+            app:shape_shadowSize="@dimen/dp_10"
+        -->
+
+    </com.wwx.chargeup.widget.StatusLayout>
+
+    <View style="@style/HorizontalLineStyle" />
+
+</LinearLayout>

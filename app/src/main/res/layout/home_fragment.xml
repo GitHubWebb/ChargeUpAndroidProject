@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.HomeFragment">
+    tools:context="com.wwx.chargeup.ui.fragment.HomeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -13,7 +13,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:elevation="0px">
 
-        <com.hjq.demo.widget.XCollapsingToolbarLayout
+        <com.wwx.chargeup.widget.XCollapsingToolbarLayout
             android:id="@+id/ctl_home_bar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_256"
@@ -74,7 +74,7 @@
 
             </androidx.appcompat.widget.Toolbar>
 
-        </com.hjq.demo.widget.XCollapsingToolbarLayout>
+        </com.wwx.chargeup.widget.XCollapsingToolbarLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_home_tab"
